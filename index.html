@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页开发</title>
+</head>
+<style>
+    .flex{
+        display: flex;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .baise{
+        background-color: white
+    }
+   
+    .juzhong{
+        justify-content: center;
+        align-items: center;
+    }
+    .duiqi{
+        justify-content: space-around;   
+    }
+    .flex1{
+        flex: 1;
+    }
+    .shangkong{
+        margin-top: 8px;
+    }
+    .youbian{
+        margin-right: 8px;
+    }
+    body{
+        background-color: #eee;
+    }
+    .yy{
+        box-shadow: 4px 4px 2px grey
+    }
+    .full-image {
+        background-image: url('./background/xuanchuan.png');
+        background-size: cover; /* 覆盖整个div */
+        background-position: center; /* 居中图片 */
+        background-repeat: no-repeat; /* 不重复图片 */
+    }
+   .ziti{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .dhbj{
+        background-image: url('./background/dh.png');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+
+   }
+   .webbj{
+        background-image: url('./background/webground.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+
+   }
+   .daiding{
+        background-image: url('./background/daiding.png');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+
+   }
+   .circleborder {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%; /* 设置边框半径为宽度和高度的一半 */
+   }
+
+
+
+</style>
+<body class="flex column webbj ">
+    <b><div style="height: 30px;text-align: end; z-index: 1;" class="baise yy dhbj">您好，欢迎您！</div></b>
+    <!--头部栏-->
+    <div style="height: 60px; z-index: 1;" class="flex duiqi shangkong">
+        <div style="height: 40px; width: 80px;" class="baise yy circleborder">
+            <b><P style="text-align: center;" class="ziti" >首页</P></b>
+        </div>
+        <div style="height: 40px; width: 80px;" class="baise yy circleborder">
+            <b><P style="text-align: center;">成果</P></b>
+        </div>
+        <div style="height: 40px; width: 80px;" class="baise yy circleborder">
+            <b><P style="text-align: center;">BIM模型</P></b>
+        </div>
+        <div style="height: 40px; width: 80px;" class="baise yy circleborder">
+            <b><P style="text-align: center;">Cesium</P></b>
+        </div>
+    </div>
+    <!--图片展示区-->
+    <div style="height: 500px;" class="shangkong yy full-image"></div>
+    
+    <b><div style="height: 30px;text-align:center;" class="shangkong baise yy dhbj">项目展示</div></b>
+
+    <!--内容区-->
+    <div class="flex shangkong column">
+        <div style="height: 300px;" class="flex juzhong duiqi">
+            <div style="width: 280px;height: 280px;" class="youbian baise yy daiding"></div>
+            <div style="width: 280px;height: 280px;" class="youbian baise yy daiding"></div>
+            <div style="width: 280px;height: 280px;" class="youbian baise yy daiding"></div>
+            <div style="width: 280px;height: 280px;" class="youbian baise yy daiding"></div>
+        </div>
+        <div style="height: 300px;" class="flex juzhong duiqi">
+            <div style="width: 280px;height: 280px;" class="youbian baise yy"></div>
+            <div style="width: 280px;height: 280px;" class="youbian baise yy"></div>
+            <div style="width: 280px;height: 280px;" class="youbian baise yy"></div>
+            <div style="width: 280px;height: 280px;" class="youbian baise yy"></div>
+        </div>
+        <div style="height: 300px;"></div>
+    
+       
+
+    </div>
+</body>
+</html>
